@@ -13,9 +13,9 @@ table.style.borderColor = "saddlebrown";
 table.style.borderWidth = "10px";
 table.style.padding = "10px 10px";
 
-const button = document.getElementById("deal-button");
-button.style.marginTop = "150px";
-button.style.color = "245, 184, 30";
+// const button = document.getElementsByClassName("buttons");
+// button.style.marginTop = "250px";
+// button.style.color = "245, 184, 30";
 
 
 
