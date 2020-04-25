@@ -36,7 +36,7 @@ function getCardImageUrl(card) {
     return cards.reduce(function(sum, card) {
     //assigns the variable "point" to the preceding argument "card.point"
       var point = card.point;
-      //creates an "if" statement (with "point" as an argument) that gives the player or dealer ten points
+      //creates an "if" statement (with "point" as an argument) that gives the player or dealer ten points if the card point is greater than ten
       if (point > 10) {
         point = 10;
       }
@@ -47,4 +47,20 @@ function getCardImageUrl(card) {
       //returns the sum of points minus the "0" index (makes sure the right amount of points are displayed)
       return sum + point;
     }, 0);
+  }
+
+  // creates a function "newDeck" that takes no parameters
+  function newDeck() {
+    //defines a new variable "cards" as an empy array
+    var cards = [];
+    //initializes a for loop counter and declares the variable "i" which runs 13 times, with values of 0 through 12 as long as "i" is less than or equal to "13"
+    for (var i = 1; i <= 13; i++) {
+      //adds the adds the "point" and "suit" properties to the end of the "cards" array 
+      cards.push({ point: i, suit: 'spades' }); // change to Card constructor
+      cards.push({ point: i, suit: 'hearts' });
+      cards.push({ point: i, suit: 'clubs' });
+      cards.push({ point: i, suit: 'diamonds' });
+    }
+    //returns the new length of the "cards" array
+    return cards;
   }
