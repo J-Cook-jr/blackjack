@@ -1,21 +1,31 @@
 const table = document.getElementById("table");
-table.style.color = "rgb(31,113,198)";
 table.style.backgroundColor = "green";
 table.style.display = "flex";
 table.style.flexDirection = "column";
 table.style.alignItems ="center";
-table.style.marginTop = "180px";
+table.style.marginTop = "120px";
 table.style.marginLeft = "100px"
 table.style.width = "80vw";
-table.style.height = "30vw";
+table.style.height = "35vw";
 table.style.borderRadius = "80px";
 table.style.borderStyle = "solid";
-table.style.borderColor = "brown";
+table.style.borderColor = "saddlebrown";
 table.style.borderWidth = "10px";
 table.style.padding = "10px 10px";
 
-table.appendChild(table);
+const button = document.getElementById("deal-button");
+button.style.marginTop = "150px";
+button.style.color = "245, 184, 30";
 
+
+
+// const labels = document.getElementsByTagName("label");
+
+// for (let i = 0; i < labels.length; i++) {
+//     const label = labels[i];
+//     label.style.color = "white";
+//     label.style.marginTop = "20px";
+// }
 
 
 
