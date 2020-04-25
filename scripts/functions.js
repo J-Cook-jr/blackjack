@@ -55,8 +55,8 @@ function getCardImageUrl(card) {
     var cards = [];
     //initializes a for loop counter and declares the variable "i" which runs 13 times, with values of 0 through 12 as long as "i" is less than or equal to "13"
     for (var i = 1; i <= 13; i++) {
-      //adds the adds the "point" and "suit" properties to the end of the "cards" array 
-      cards.push({ point: i, suit: 'spades' }); // change to Card constructor
+      //adds the "point" and "suit" properties to the end of the "cards" array 
+      cards.push({ point: i, suit: 'spades' });
       cards.push({ point: i, suit: 'hearts' });
       cards.push({ point: i, suit: 'clubs' });
       cards.push({ point: i, suit: 'diamonds' });
