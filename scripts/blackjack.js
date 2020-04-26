@@ -67,6 +67,28 @@ $(function jackDiamond() {
         // "gameover" function will be called after the calculations and message display
         gameOver();
     });
+    
+    //creates "play-again" function to determine what happens when "Play Again" button is clicked
+    $('#play-again').click(function () {
+        // the "deal", "hit", and "stand" buttons will appear
+        $('#deal-button').show();
+        $('#hit-button').show();
+        $('#stand-button').show();
+        //the "Play Again" button will disappear
+        $('#play-again').hide();
+        //the "player-hand" and "dealer-hand" elements will be empty (no cards on the table)
+        $('#player-hand').html('');
+        $('#dealer-hand').html('');
+        // the message on the screen will disappear
+        $('#messages').text('');
+        //the player and dealer points will display 0
+        $('#player-points').text('');
+        $('#dealer-points').text('');
+        //calls "setupNewGame" function to restart a new black jack game
+        setupNewGame();
+    });
+
+    
 
    
     
