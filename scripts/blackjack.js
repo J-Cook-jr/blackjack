@@ -128,11 +128,14 @@ $(function jackDiamond() {
         updateScoreDisplay();
     }
     
-
-
-    
-
-   
-    
-
+    //creates a function called "setupNewGame" which runs anytime the game starts or restarts
+    function setupNewGame() {
+        // "deck" calls the "newDeck" function
+        deck = newDeck();
+        //shuffle the deck
+        deck = _.shuffle(deck);
+        //creates "dealerHand" and "playerHand" arrays
+        dealerHand = [];
+        playerHand = [];
+    }
 }); 
