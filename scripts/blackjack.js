@@ -110,6 +110,25 @@ $(function jackDiamond() {
         $('#player-points').text(playerPoints);
     }
 
+    //creates a function called "dealACard" that takes two parameters: "handArray" and "elementSelector"
+    function dealACard(handArray, elementSelector) {
+        //assigns an array  "deck" (which uses the "pop()" method) to the variable "card"
+        //the pop method will remove the last "img" element of the playing card from the "deck" array.
+        card = deck.pop();
+        //the "handArray" object uses the "push()" method to add one or more "img" elements of the playing cards to the end of the "playerHand" and or "dealerHand" array.
+        handArray.push(card);
+        //creates object "cardURL" which stores "getCardImageUrl(cards)" function as it's property
+        //"getCardImageUrl" is a function that takes a parmaeter named "card"
+        cardUrl = getCardImageUrl(card);
+        //creates an object named "elementSelector" that uses the ".append" method to add the "img src" of the playing cards to the "cardUrl" object
+        $(elementSelector).append(
+            '<img src="' + cardUrl + '">'
+        );
+        //calls "updateScoreDisplay" function
+        updateScoreDisplay();
+    }
+    
+
 
     
 
