@@ -1,8 +1,8 @@
 //creates function "jackDiamond" that will manipulate "index.HTML" file
 $(function jackDiamond() {
-    //creates "play-again" element that is hidden when the game starts
+    //creates "play-again" object which uses the ".hide" method to hide the "Play Again" button/element when the game starts
     $('#play-again').hide();
-    //creates variables that will be used to define elements in the html file
+    //creates objects that will be used to manipulate elements in the html file
     var deck, dealerHand, playerHand;
     //calls a function to start a new game
     setupNewGame();
@@ -11,7 +11,7 @@ $(function jackDiamond() {
      
     //creates a function that will deal two cards to the player and dealer when the "deal" button is clicked
     $('#deal-button').click(function () {
-        //when "Deal" button is clicked, "dealACard" function will run four times 
+        //when "Deal" button is clicked, "dealACard" function will run four times and deal two cards each to the player and dealer.
         dealACard(playerHand, '#player-hand');
         dealACard(dealerHand, '#dealer-hand');
         dealACard(playerHand, '#player-hand');
@@ -87,6 +87,17 @@ $(function jackDiamond() {
         //calls "setupNewGame" function to restart a new black jack game
         setupNewGame();
     });
+    
+    //creates "gameOver" function 
+    function gameOver() {
+        //when the game is over the "hit", "stand" and "deal" buttons will disappear
+        $('#hit-button').hide();
+        $('#stand-button').hide();
+        $('#deal-button').hide();
+        //the "Play Again" button will appear
+        $('#play-again').show();
+    }
+
 
     
 
