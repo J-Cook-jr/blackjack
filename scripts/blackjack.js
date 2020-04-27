@@ -98,6 +98,18 @@ $(function jackDiamond() {
         $('#play-again').show();
     }
 
+    //creates function "updateScoreDisplay"
+    function updateScoreDisplay() {
+        //creates an object called "dealerPoints" which holds the current value of the calculated points of the dealers hand
+        var dealerPoints = calculatePoints(dealerHand);
+        //changes the HTML element "dealer-points" to a number representaion of the dealers points
+        $('#dealer-points').text(dealerPoints);
+        //creates a variable called "playerPoints" which holds the current value of the calculated points of the players hand
+        var playerPoints = calculatePoints(playerHand);
+         //changes the HTML element "player-points" to a number representaion of the players points
+        $('#player-points').text(playerPoints);
+    }
+
 
     
 
