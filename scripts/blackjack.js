@@ -28,9 +28,9 @@ $(function jackDiamond() {
         dealACard(playerHand, '#player-hand');
         // "if" statement that checks if the player's hand is over 21 points (This is called a bust in black jack)
         if (calculatePoints(playerHand) > 21) {
-            //displays the message "You bust!" if the players hand is over 21 points
+           //displays the message "You bust!" if the players hand is over 21 points
             $('#messages').text('You bust!');
-            //calls the "gameOver" function when max amount of points are reached
+           //calls the "gameOver" function when max amount of points are reached
             gameOver();
         }
     });
