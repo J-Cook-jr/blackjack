@@ -20,4 +20,4 @@ The purpose of this project was to learn how to use event listeners in javascrip
 * Deal button - Deals two cards to the player's and dealer's hand.
 * Hit button - Deals one card to the player's and dealer's hand.
 * Stand button - Allows player to keep their current hand and point's without going over the 21 point limit (busting).
-* Play Again button- Once the game is over the user to clicks "Play Again" to restart and play another game of Black Jack.
+* Play Again button- Once the game is over the user clicks "Play Again" to restart and play another game of Black Jack.
