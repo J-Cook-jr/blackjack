@@ -1,4 +1,4 @@
-![Example screenshot](./blackjack/blackjack.png)
+![Example screenshot](./blackjack/black_jack.png)
 
 # Jack Diamond Black jack
 > A Black Jack app built using vanilla javascript.
